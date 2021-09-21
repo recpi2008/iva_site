@@ -1,0 +1,21 @@
+{% block menu %}
+    {% load static %}
+    <!--Navigator-fullscreen-->
+    <div id="navigation-content">
+        <div class="logo">
+            <img src="{% static 'images/willy wonka logo.png' %}" alt="logo"/>
+        </div>
+        <div class="navigation-close">
+            <span class="close-first"></span>
+            <span class="close-second"></span>
+        </div>
+        <div class="navigation-links">
+            <a href="#" data-text="ГЛАВНАЯ" id="home-link">ГЛАВНАЯ</a>
+            <a href="#" data-text="ОБО МНЕ" id="about-link">ОБО МНЕ</a>
+            <a href="#" data-text="БЛОГ" id="blog-link">БЛОГ</a>
+            <a href="#" data-text="ПОРТФОЛИО" id="portfolio-link">ПОРТФОЛИО</a>
+            <a href="#" data-text="КОНТАКТЫ" id="contact-link">КОНТАКТЫ</a>
+        </div>
+    </div>
+    <!--Navigator-Fullscreen END-->
+{% endblock %}

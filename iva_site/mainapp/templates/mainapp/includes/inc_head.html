@@ -1,0 +1,16 @@
+{% block head %}
+    {% load static %}
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Main page</title>
+    <!--favicon-img-->
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}"/>
+    <!--favicon-img-->
+    <!--main css file should not be removed -->
+
+    <link rel="stylesheet" href="{% static 'css/index.css' %}"/>
+    <!--main css file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+</head>
+{% endblock %}

@@ -1,0 +1,65 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block content %}
+<body>
+<!--contains all the div-->
+<div id="all">
+    <!--mouse  follower-->
+    <div class="cursor"></div>
+    <!--mouse  follower-->
+    <!--loader-->
+    <div id="loader"><span class="color">Andrey</span>Iva</div>
+    <!--loader-end-->
+    <!--link-screen-->
+    <div id="breaker"></div>
+    <div id="breaker-two"></div>
+    <!--link-screen-->
+    <!--Main-Section-->
+
+{% include 'mainapp/includes/inc_menu.html' %}
+
+    <!--Home Page-->
+    <!--Menubar-->
+    <div id="navigation-bar">
+        <img src="{% static 'images/willy wonka logo.png' %}" alt="logo"/>
+        <div class="menubar">
+            <span class="first-span"></span>
+            <span class="second-span"></span>
+            <span class="third-span"></span>
+        </div>
+    </div>
+    <!--Menubar End-->
+    <!--Header-->
+    <div id="header">
+        <div id="particles"></div>
+        <!--Social Media Links-->
+     {% include 'mainapp/includes/inc_social.html' %}
+        <!--Social Media Links end-->
+        <div class="header-content">
+            <div class="header-content-box">
+                <div class="firstline"><span class="color">ANDREY </span>IVA</div>
+                <div class="secondline">
+                    I'm a
+                    <span
+                            class="txt-rotate color"
+                            data-period="1200"
+                            data-rotate='[ " Певец.", " Блогер.", " ТикТокер." ]'
+                    ></span>
+                    <span class="slash">|</span>
+                </div>
+
+            </div>
+        </div>
+        <!--header image-->
+        <div class="header-image">
+            <img src="{% static 'images/main_iva.jpg' %}" alt="logo"/>
+        </div>
+        <!--header image end-->
+    </div>
+    <!--Header End-->
+    <!--HomePage End-->
+    <!--Main-Section End-->
+</div>
+
+</body>
+{% endblock %}
