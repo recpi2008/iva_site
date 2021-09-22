@@ -25,6 +25,7 @@ urlpatterns = [
 
     path('', index, name='index'),
     path('songs/', include('songsapp.urls', namespace='songs')),
+    path('users/', include('users.urls', namespace='users')),
 ]
 
 if settings.DEBUG:
