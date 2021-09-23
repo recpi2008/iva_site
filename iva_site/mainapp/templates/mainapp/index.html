@@ -37,6 +37,9 @@
         <!--Social Media Links end-->
         <div class="header-content">
             <div class="header-content-box">
+                {% if user.is_authenticated %}
+                <div class="secondline"><span class="color">Привет, </span>{{ user.username }}</div>
+                 {% endif %}
                 <div class="firstline"><span class="color">ANDREY </span>IVA</div>
                 <div class="secondline">
                     I'm a

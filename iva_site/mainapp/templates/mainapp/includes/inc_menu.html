@@ -15,7 +15,13 @@
             <a href="#" data-text="БЛОГ" id="blog-link">БЛОГ</a>
             <a href="{% url 'songs:song' %}" data-text="ТРЕКИ" id="portfolio-link">ТРЕКИ</a>
             <a href="#" data-text="КОНТАКТЫ" id="contact-link">КОНТАКТЫ</a>
-            <a href="{% url 'users:login' %}" data-text="ВОЙТИ" id="contact-link">ВОЙТИ</a>
+            {% if user.is_authenticated %}
+                <a href="" data-text="ЛИЧНЫЙ КАБИНЕТ" id="contact-link">ЛИЧНЫЙ КАБИНЕТ</a>
+                <a href="" data-text="АДМИНКА" id="contact-link">АДМИНКА</a>
+                <a href="{% url 'users:logout' %}" data-text="ВЫЙТИ" id="contact-link">ВЫЙТИ</a>
+            {% else %}
+                <a href="{% url 'users:login' %}" data-text="ВОЙТИ" id="contact-link">ВОЙТИ</a>
+            {% endif %}
         </div>
     </div>
     <!--Navigator-Fullscreen END-->
