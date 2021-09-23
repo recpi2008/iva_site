@@ -6,38 +6,57 @@
     <div class="navigation-content">
         <div class="navigation-logo hover opacity">
             <a href="#" class="text">ARLO BROWN</a>
-         </div>
+        </div>
         <ul class="navigation-ul">
-            <li><a href="{% url 'index' %}" data-text="ГЛАВНАЯ" data-img="images/bg-image-three.jpg">ГЛАВНАЯ</a></li>
-            <li><a href="about-one.html"  data-text="About"  data-img="images/about-img.jpg">About</a></li>
-            <li><a href="songs-one.html" data-text="Songs"  data-img="images/album-thumbnail-nine.jpg">Songs</a></li>
-            <li><a href="blog-one.html"  data-text="Blogs" data-img="images/main-bg-three.jpg">Blogs</a></li>
-            <li><a href="contact-one.html"  data-text="Contact" data-img="images/album-thumbnail-four.jpg">Contact</a></li>
+            <li><a href="{% url 'index' %}" data-text="ГЛАВНАЯ"
+                   data-img="{% static 'css_songs/images/bg-image-three.jpg' %}">ГЛАВНАЯ</a></li>
+            <li><a href="{% url 'songs:about' %}" data-text="ОБО МНЕ"
+                   data-img="{% static 'css_songs/images/about-img.jpg' %}">ОБО МНЕ</a></li>
+            <li><a href="{% url 'songs:song' %}" data-text="ТРЕКИ"
+                   data-img="{% static 'css_songs/images/album-thumbnail-nine.jpg' %}">ТРЕКИ</a></li>
+            <li><a href="blog-one.html" data-text="Blogs" data-img="{% static 'css_songs/images/main-bg-three.jpg' %}">Blogs</a>
+            </li>
+            <li><a href="contact-one.html" data-text="Contact"
+                   data-img="{% static 'css_songs/images/album-thumbnail-four.jpg' %}">Contact</a></li>
         </ul>
         <div class="navigation-close hover about-close opacity">
             <div class="navigation-close-line"></div>
             <div class="navigation-close-line"></div>
-          </div>
+        </div>
 
-            <div class="project-preview"></div>
+        <div class="project-preview"></div>
 
 
-     <!-- HEADPHONE IMG -->
-     <div class="headphone-navigation opacity">
-        <img src="images/headphone.png" title="headphone zone" class="text" alt="headphone">
-      </div>
-       <!-- HEADPHONE IMG -->
+        <!-- HEADPHONE IMG -->
+        <div class="headphone-navigation opacity">
+            <img src="images/headphone.png" title="headphone zone" class="text" alt="headphone">
+        </div>
+        <!-- HEADPHONE IMG -->
 
 
         <!-- SOCIAL MEDIA LINKS -->
         <div class="social-media-links-navigation">
             <ul>
-                <li ><a href="#"  class="text hover opacity">YT</a></li>
-                <li ><a href="#"  class="text hover opacity">FB</a></li>
-                <li ><a href="#"  class="text hover opacity">IG</a></li>
+                <li><a href="#"><img src="{% static 'images/instagram logo.png' %}" class="social-media"
+                                     alt="instagram-logo"/></a></li>
+                <li><a href="#"><img src="{% static 'images/facebook logo.png' %}" class="social-media"
+                                     alt="facebook-logo"/></a></li>
+                <li><a href="#"
+                ><img
+                        src="{% static 'images/linkedin logo.png' %}"
+                        class="social-media"
+                        alt="linkedin-logo"
+                /></a></li>
+                <li><a href="#"
+                ><img
+                        src="{% static 'images/twitter logo.png' %}"
+                        class="social-media"
+                        alt="twitter-logo"
+                /></a></li>
+
             </ul>
         </div>
-          <!-- SOCIAL MEDIA LINKS -->
+        <!-- SOCIAL MEDIA LINKS -->
 
     </div>
 {% endblock %}

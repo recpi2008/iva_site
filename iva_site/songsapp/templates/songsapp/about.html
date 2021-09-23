@@ -1,0 +1,78 @@
+{% extends 'songsapp/basa_songs.html' %}
+{% load static %}
+{% block content %}
+<body>
+    <!-- MAIN CONTENT -->
+  
+    <main id="about-one">
+
+        
+         <{% include 'songsapp/includes/inc_headphone.html' %}
+
+        <div id="about-one-content">
+                
+           {% include 'songsapp/includes/inc_logo_songs.html' %}
+
+
+<!-- progress-bar -->
+<div class="progress-bar-container fade-in">
+    <div class="progressbar"></div>
+</div>
+<!-- progress-bar -->
+
+
+  
+<div class="scrolling-part">
+      
+</div>
+         
+          
+<div class="heading">
+    <span class="text">
+      ABOUT
+    </span> 
+ </div>    
+
+
+<div class="center">
+  <!-- ABOUT IMG -->
+  <div class="about-img img">
+    <img class="img-parallax" src="images/about-img.jpg" alt="about-img">
+  </div>
+  <!-- ABOUT IMG -->
+</div>
+<div class="center">
+  <div class="about-text">
+    <div class="about-text-heading  text-scroll">
+     Hi there, I’m glad you found me. My name is <span class="red"> Arlo Brown</span> and I like to make music.
+    </div>
+    <div class="about-text-content  text-scroll">
+      On this page you can find out what I have been up to lately and maybe even a little bit about where I will go in the future. For me, the greatest thing about being a musician is being in the position to inspire other people. I take such pleasure in hearing that people have been motivated to create after hearing my music, whether it be a painting, a poem, their own music or something completely different. Music is not a one way street, it is a conversation where the listener's role is as important as the artist's. Well, here you can find my side of it all.
+    </div>
+    
+   </div>
+</div>
+
+<div class="signature">
+   <span class="text-scroll"> Arlo Brown.</span> 
+</div>
+
+
+
+             
+ <!-- HEADPHONE IMG -->
+ <div class="headphone img text">
+  <img src="images/headphone.png" title="headphone zone" class="text" alt="headphone">
+</div>
+ <!-- HEADPHONE IMG -->
+
+        </div>
+    </div>
+        <!-- NAVIGATION CONTENT -->
+ {% include 'songsapp/includes/inc_menu_songs.html' %}
+  <!-- NAVIGATION CONTENT -->
+    </main>
+    <!-- MAIN CONTENT -->
+
+</body>
+{% endblock %}
