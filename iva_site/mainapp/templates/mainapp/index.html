@@ -1,5 +1,8 @@
 {% extends 'mainapp/base.html' %}
 {% load static %}
+{% block header %}
+    {% include 'mainapp/includes/inc_head.html' %}
+{% endblock %}
 {% block content %}
 <body>
 <!--contains all the div-->
@@ -65,4 +68,7 @@
 </div>
 
 </body>
+{% endblock %}
+{% block script %}
+    {% include 'mainapp/includes/inc_script_js.html' %}
 {% endblock %}

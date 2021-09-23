@@ -2,6 +2,6 @@ from django.shortcuts import render
 
 def index(request):
     contex = {
-        'title': 'Andrey Iva - Main',
+        'title': 'AndreyIva - Главная',
     }
     return render(request, 'mainapp/index.html',contex)
