@@ -14,10 +14,10 @@
             <a href="{% url 'songs:about' %}" data-text="ОБО МНЕ" id="about-link">ОБО МНЕ</a>
             <a href="#" data-text="БЛОГ" id="blog-link">БЛОГ</a>
             <a href="{% url 'songs:song' %}" data-text="ТРЕКИ" id="portfolio-link">ТРЕКИ</a>
-            <a href="#" data-text="КОНТАКТЫ" id="contact-link">КОНТАКТЫ</a>
+            <a href="" data-text="КОНТАКТЫ" id="contact-link">КОНТАКТЫ</a>
             {% if user.is_authenticated %}
                 <a href="{% url 'users:profile' %}" data-text="ЛИЧНЫЙ КАБИНЕТ" id="contact-link">ЛИЧНЫЙ КАБИНЕТ</a>
-                <a href="" data-text="АДМИНКА" id="contact-link">АДМИНКА</a>
+                <a href="{% url 'admins:index' %}" data-text="АДМИНКА" id="contact-link">АДМИНКА</a>
                 <a href="{% url 'users:logout' %}" data-text="ВЫЙТИ" id="contact-link">ВЫЙТИ</a>
             {% else %}
                 <a href="{% url 'users:login' %}" data-text="ВОЙТИ" id="contact-link">ВОЙТИ</a>
