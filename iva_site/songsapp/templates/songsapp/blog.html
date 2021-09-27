@@ -1,0 +1,86 @@
+{% extends 'songsapp/basa_songs.html' %}
+{% load static %}
+ {% block content %}
+<body>
+
+    <!-- MAIN CONTENT -->
+    <main id="blog-one">
+
+        <!-- CUSTOM CURSOR -->
+       {% include 'songsapp/includes/inc_headphone.html' %}
+        <!-- PRELOADER -->
+
+        <div id="blog-one-content">
+
+            <!-- HEADING -->
+
+            <div class="heading">
+               <span class="text">
+                БЛОГ
+               </span>
+            </div>
+
+            <!-- HEADING -->
+
+
+            <!-- NAVIGATION -->
+            {% include 'songsapp/includes/inc_logo_songs.html' %}
+            <!-- NAVIGATION -->
+
+
+<div class="center">
+
+<!-- BLOG-CONTAINER -->
+
+<div id="blogs-container">
+
+{% for blog in blogs %}
+    <!-- BLOG -->
+    <div class="blog fade-up">
+            <div class="blog-img">
+                <img src="{{ blog.image_blog.url }}" alt="blog-img">
+            </div>
+            <div class="blog-text">
+                <div class="blog-heading">{{ blog.blog_name }}</div>
+                <div class="blog-description">{{ blog.blog_desription }}</div>
+                <div class="blog-info">
+                    <div class="blog-duration"><img src="{% static 'css_songs/images/clock.png' %}" alt="clock">&nbsp; {{ blog_duration }} </div>
+                    <div class="blog-type">{{ blog.blog_type }}</div>
+                    <a href="blog-single.html" title="Read More">
+                        <div class="blog-read-more">
+                           <i class="gg-arrow-right"></i>
+                        </div>
+                        </a>
+                </div>
+            </div>
+        <div class="blog-date">{{ blog.blog_date }}</div>
+    </div>
+    <!-- BLOG -->
+{% endfor %}
+
+</div>
+
+<!-- BLOG-CONTAINER-->
+
+</div>
+
+   <!-- HEADPHONE IMG -->
+  {% include 'songsapp/includes/inc_headphone_footer.html' %}
+<!-- progress-bar -->
+        </div>
+
+
+
+    <!-- NAVIGATION CONTENT -->
+
+    {% include 'songsapp/includes/inc_menu_songs.html' %}
+    <!-- NAVIGATION CONTENT -->
+
+
+
+
+
+    </main>
+    <!-- MAIN CONTENT -->
+{% endblock %}
+

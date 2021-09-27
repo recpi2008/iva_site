@@ -14,7 +14,7 @@
                    data-img="{% static 'css_songs/images/about-img.jpg' %}">ОБО МНЕ</a></li>
             <li><a href="{% url 'songs:song' %}" data-text="ТРЕКИ"
                    data-img="{% static 'css_songs/images/album-thumbnail-nine.jpg' %}">ТРЕКИ</a></li>
-            <li><a href="blog-one.html" data-text="Blogs" data-img="{% static 'css_songs/images/main-bg-three.jpg' %}">Blogs</a>
+            <li><a href="{% url 'songs:blog' %}" data-text="БЛОГ" data-img="{% static 'css_songs/images/main-bg-three.jpg' %}">БЛОГ</a>
             </li>
             <li><a href="contact-one.html" data-text="Contact"
                    data-img="{% static 'css_songs/images/album-thumbnail-four.jpg' %}">Contact</a></li>

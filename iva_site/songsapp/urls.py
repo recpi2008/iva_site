@@ -5,4 +5,5 @@ app_name = 'songs'
 urlpatterns = [
     path('', songs, name='song'),
     path('about/', about, name='about'),
+    path('blog/', blog, name='blog'),
 ]

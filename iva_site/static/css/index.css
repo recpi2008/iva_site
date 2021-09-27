@@ -204,15 +204,20 @@ body{
     z-index: 2;
     cursor: pointer;
     transition: all .4s ease;
+    border-radius: 25px;
+    border: 1px solid #da2b0f;
+    box-shadow: 0 0 7px #f1eaea;
 }
 .logo img:hover{
     opacity: 1;
     transform: rotate(-45deg);
 }
 #navigation-bar img{
-    height: 80px;
+    height: 75px;
     position: absolute;
-    ;
+    border-radius: 25px;
+    border: 1px solid #da2b0f;
+    box-shadow: 0 0 7px #f1eaea;
     top: 15%;
     left: 2.5%;
     opacity: .8;
@@ -220,7 +225,7 @@ body{
 }
 #navigation-bar img:hover{
     opacity: 1;
-    transform:rotate(-45deg);
+    transform:rotate(-35deg);
 }
 .header-image img{
     height: 100vh;

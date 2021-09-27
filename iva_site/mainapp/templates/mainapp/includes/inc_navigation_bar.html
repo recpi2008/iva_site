@@ -1,0 +1,13 @@
+{% block menu %}
+    {% load static %}
+  <div id="navigation-bar">
+        <img src="{% if user.image %} {{ user.image.url }} {% else %} {% static 'images/willy wonka logo.png' %} {% endif %}"/>
+                        >
+{#        <img src="{% static 'images/willy wonka logo.png' %}" alt="logo"/>#}
+        <div class="menubar">
+            <span class="first-span"></span>
+            <span class="second-span"></span>
+            <span class="third-span"></span>
+        </div>
+    </div>
+{% endblock %}

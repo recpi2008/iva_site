@@ -1,7 +1,7 @@
 import os
 import json
 from django.shortcuts import render
-from songsapp.models import Songs, ContentCategory
+from songsapp.models import Songs, ContentCategory, Blog
 
 MODULE_DIR = os.path.dirname(__file__)
 
@@ -20,3 +20,10 @@ def about(request):
         'title': 'AndreyIva - ОБО МНЕ',
     }
     return render(request, 'songsapp/about.html', contex)
+
+def blog(request):
+    contex = {
+        'title': 'AndreyIva - БЛОГ',
+        'blogs': Blog.objects.all(),
+    }
+    return render(request, 'songsapp/blog.html', contex)
