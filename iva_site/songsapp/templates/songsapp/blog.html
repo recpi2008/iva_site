@@ -46,7 +46,7 @@
                 <div class="blog-info">
                     <div class="blog-duration"><img src="{% static 'css_songs/images/clock.png' %}" alt="clock">&nbsp; {{ blog_duration }} </div>
                     <div class="blog-type">{{ blog.blog_type }}</div>
-                    <a href="blog-single.html" title="Read More">
+                    <a href="{% url 'songs:detail' blog.id %}" title="Read More">
                         <div class="blog-read-more">
                            <i class="gg-arrow-right"></i>
                         </div>

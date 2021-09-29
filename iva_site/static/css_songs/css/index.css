@@ -371,31 +371,55 @@ a{
 }
 .navigation-content .navigation-ul li a{
     color: rgb(240,240,240,.6);
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 200;
     font-family:camel;
     transition: all .4s ease;
     z-index: 3;
     position: relative;
     overflow: hidden;
+    padding:10px;
+    text-decoration: none;
+    opacity: .7;
+
 }
-.navigation-content .navigation-ul li a::after{
-    content:attr(data-text);
-    opacity:1;
-    position: absolute;
-    font-size: inherit;
-    font-weight: inherit;
-    width:0%;
-    height:100%;
-    overflow: hidden;
-    left:0;
-    color: rgb(240,240,240);
-    top:0%;
-    transition: all 1s cubic-bezier(0.84, 0, 0.08, 0.99);
+
+.navigation-content .navigation-ul li a:hover{
+    opacity: 1;
+     color: white;
 }
+
 .navigation-content .navigation-ul li a:hover::after{
    width: 100%;
 }
+
+.navigation-ul li a::before{
+    content: "";
+    position: absolute;
+    top:50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+    align-items: center;
+    font-size: 5em;
+    font-weight: 400;
+    font-family: monoton;
+    color:rgb(255, 255, 255,.1);
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0;
+    letter-spacing: 100px;
+    transition: all .4s ease;
+}
+
+
+.navigation-ul li a:hover::before{
+    content: attr(data-text);
+    opacity: 1;
+    letter-spacing: 10px;
+}
+
 
 .project-preview {
     position: fixed;

@@ -5,19 +5,40 @@
 
     <div class="navigation-content">
         <div class="navigation-logo hover opacity">
-            <a href="#" class="text">ARLO BROWN</a>
+            <a href="{% url 'index' %}" class="text">AndreyIva</a>
         </div>
         <ul class="navigation-ul">
             <li><a href="{% url 'index' %}" data-text="ГЛАВНАЯ"
                    data-img="{% static 'css_songs/images/bg-image-three.jpg' %}">ГЛАВНАЯ</a></li>
-            <li><a href="{% url 'songs:about' %}" data-text="ОБО МНЕ"
+            <li><a href="{% url 'songs:about' %}" data-text="ОБОМНЕ"
                    data-img="{% static 'css_songs/images/about-img.jpg' %}">ОБО МНЕ</a></li>
+            <li><a href="{% url 'songs:blog' %}" data-text="БЛОГ"
+                   data-img="{% static 'css_songs/images/main-bg-three.jpg' %}">БЛОГ</a>
+            </li>
             <li><a href="{% url 'songs:song' %}" data-text="ТРЕКИ"
                    data-img="{% static 'css_songs/images/album-thumbnail-nine.jpg' %}">ТРЕКИ</a></li>
-            <li><a href="{% url 'songs:blog' %}" data-text="БЛОГ" data-img="{% static 'css_songs/images/main-bg-three.jpg' %}">БЛОГ</a>
-            </li>
-            <li><a href="contact-one.html" data-text="Contact"
-                   data-img="{% static 'css_songs/images/album-thumbnail-four.jpg' %}">Contact</a></li>
+
+            <li><a href="{% url 'songs:contact' %}" data-text="КОНТАКТЫ"
+                   data-img="{% static 'css_songs/images/album-thumbnail-four.jpg' %}">КОНТАКТЫ</a></li>
+
+
+            {% if user.is_authenticated %}
+                <li><a href="{% url 'users:profile' %}" data-text="АККАУНТ"
+                   data-img="{% static 'css_songs/images/album-thumbnail-four.jpg' %}">АККАУНТ</a></li>
+                <li><a href="{% url 'users:logout' %}" data-text="ВЫЙТИ"
+                   data-img="{% static 'css_songs/images/album-thumbnail-four.jpg' %}">ВЫЙТИ</a></li>
+                {% if user.is_staff %}
+                    <li><a href="/admin/" data-text="АДМИНКА"
+                   data-img="{% static 'css_songs/images/album-thumbnail-four.jpg' %}">АДМИНКА</a></li>
+                    {% endif %}
+            {% else %}
+                 <li><a href="{% url 'users:login' %}" data-text="ВОЙТИ"
+                   data-img="{% static 'css_songs/images/album-thumbnail-four.jpg' %}">ВОЙТИ</a></li>
+                 <li><a href="{% url 'users:registration' %}" data-text="РЕГИСТРАЦИЯ"
+                   data-img="{% static 'css_songs/images/album-thumbnail-four.jpg' %}">РЕГИСТРАЦИЯ</a></li>
+
+            {% endif %}
+
         </ul>
         <div class="navigation-close hover about-close opacity">
             <div class="navigation-close-line"></div>
@@ -29,7 +50,8 @@
 
         <!-- HEADPHONE IMG -->
         <div class="headphone-navigation opacity">
-            <img src="images/headphone.png" title="headphone zone" class="text" alt="headphone">
+            <img src="{% static 'css_songs/images/headphone.png' %}" title="headphone zone" class="text"
+                 alt="headphone">
         </div>
         <!-- HEADPHONE IMG -->
 
