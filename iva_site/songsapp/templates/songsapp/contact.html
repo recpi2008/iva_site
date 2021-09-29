@@ -1,96 +1,89 @@
 {% extends 'songsapp/basa_songs.html' %}
 {% load static %}
- {% block content %}
-<body>
+{% block content %}
+    <body>
     <main id="contact-one">
 
-         <!-- CUSTOM CURSOR -->
-         {% include 'songsapp/includes/inc_headphone.html' %}
+        <!-- CUSTOM CURSOR -->
+        {% include 'songsapp/includes/inc_headphone.html' %}
         <!-- PRELOADER -->
-
 
         <div id="contact-one-content">
 
-  <!-- NAVIGATION -->
-  {% include 'songsapp/includes/inc_logo_songs.html' %}
-<!-- NAVIGATION -->
+            <!-- NAVIGATION -->
+            {% include 'songsapp/includes/inc_logo_songs.html' %}
+            <!-- NAVIGATION -->
 
 
+            <!-- HEADING -->
+            <div class="heading">
+                <div class="text">
+                    КОНТАКТЫ
+                </div>
+            </div>
+
+            <!-- HEADING -->
+
+            <div id="flex-row">
+
+                <!-- CONTACT FORM -->
+
+                <div id="contact-form">
+
+                    <div id="form" class="opacity-contact">
+
+                        <form id="myForm" action="#">
+                            <div class="input-line">
+                                <input id="name" type="text" placeholder="ИМЯ" class="input-same-line" required>
+                                <input id="email" type="email" placeholder="EMAIL" class="input-same-line" required>
+                            </div>
+                            <div class="input-line-column">
+                                <input id="subject" type="text" placeholder="ТЕМА" required>
+                                <textarea name="textarea" id="body" class="textarea" placeholder="СООБЩЕНИЕ"
+                                          required></textarea>
+                            </div>
+                            <button type="button" id="submit" class="hover">ОТПРАВИТЬ</button>
+                            <div id="message">INVALID EMAIL</div>
+                        </form>
+
+                    </div>
+                </div>
+
+                <!-- CONTACT FORM -->
 
 
+                <!-- ENQUIRY MAIL -->
 
-<!-- HEADING -->
-<div class="heading">
-    <div class="text">
-      CONTACT
-    </div>
-</div>
+                <div id="collaboration-mail" class="opacity-contact">
 
-<!-- HEADING -->
+                    <div class="circular-text">
+                        <span id="rotated"> * &nbsp;&nbsp;&nbsp;&nbsp; ДЛЯ КОЛЛАБОРАЦИИ * &nbsp;&nbsp;&nbsp;&nbsp; ДЛЯ КОЛЛАБОРАЦИИ * &nbsp;&nbsp;&nbsp;&nbsp; ДЛЯ КОЛЛАБОРАЦИИ * &nbsp;&nbsp;&nbsp;&nbsp; ДЛЯ КОЛЛАБОРАЦИИ  &nbsp;&nbsp;&nbsp;&nbsp; </span>
+                    </div>
+                    <div class="mail">
+                        <a href="mailto:INFO@GMAIL.COM">ivaneleskin2019@gmail.com</a>
+                    </div>
+                </div>
 
+                <!-- ENQUIRY MAIL -->
 
-<div id="flex-row">
+            </div>
 
-<!-- CONTACT FORM -->
-
-<div id="contact-form">
-
-
-    <div id="form" class="opacity-contact">
-
-            <form  id ="myForm" action="#">
-              <div class="input-line">
-                <input id="name" type="text" placeholder="NAME" class="input-same-line" required>
-                <input id="email" type="email" placeholder="EMAIL" class="input-same-line" required>
-              </div>
-              <div class="input-line-column">
-                <input id="subject" type="text" placeholder="SUBJECT" required>
-                <textarea name="textarea" id="body" class="textarea" placeholder="MESSAGE" required></textarea>
-              </div>
-             <button type="button" id="submit" class="hover">Send</button>
-             <div id="message">INVALID EMAIL</div>
-            </form>
-
-    </div>
-</div>
-
-<!-- CONTACT FORM -->
-
-
-
-<!-- ENQUIRY MAIL -->
-
-<div id="collaboration-mail" class="opacity-contact">
-
-    <div class="circular-text">
-        <span id="rotated">  FOR COLLABORATION * &nbsp;&nbsp;&nbsp;&nbsp; FOR COLLABORATION * &nbsp;&nbsp;&nbsp;&nbsp; FOR COLLABORATION * &nbsp;&nbsp;&nbsp;&nbsp; FOR COLLABORATION * &nbsp;&nbsp;&nbsp;&nbsp; </span>
-    </div>
-    <div class="mail">
-        <a href="mailto:INFO@GMAIL.COM">INFO@GMAIL.COM</a>
-    </div>
-</div>
-
-<!-- ENQUIRY MAIL -->
-
-</div>
-
-
- <!-- HEADPHONE IMG -->
- {% include 'songsapp/includes/inc_headphone_footer.html' %}
-<!-- progress-bar -->
+            <!-- HEADPHONE IMG -->
+            {% include 'songsapp/includes/inc_headphone_footer.html' %}
+            <!-- progress-bar -->
 
         </div>
 
-    <!-- NAVIGATION CONTENT -->
+        <!-- NAVIGATION CONTENT -->
 
-   {% include 'songsapp/includes/inc_menu_songs.html' %}
+        {% include 'songsapp/includes/inc_menu_songs.html' %}
 
-    <!-- NAVIGATION CONTENT -->
+        <!-- NAVIGATION CONTENT -->
 
-        </main>
+    </main>
 
 
-</body>
+    </body>
 {% endblock %}
 
 
