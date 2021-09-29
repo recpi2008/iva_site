@@ -35,24 +35,19 @@ def contact(request):
     }
     return render(request, 'songsapp/contact.html', contex)
 
-def blog_in(request,id):
-    blogs = Blog.objects.get(id=id)
-    contex = {
-        'title': 'AndreyIva - КОНТАКТЫ',
-        'blogs': blogs,
-    }
-    return render(request, 'songsapp/blog_in.html', contex)
 
 class ProductDetail(DetailView):
     """
     Контроллер вывода информации о продукте
     """
     model = Blog
-    template_name = 'songsapp/blog_in.html'
+    template_name = 'songsapp/blog_detail.html'
     context_object_name = 'blog'
+
 
     def get_context_data(self, category_id=None, *args, **kwargs):
         """Добавляем список категорий для вывода сайдбара с категориями на странице каталога"""
         context = super().get_context_data()
         context['categories'] = ContentCategory.objects.all()
+        context['title'] = 'AndreyIva - О БЛОГЕ'
         return context

@@ -2,7 +2,6 @@
 {% load static %}
  {% block content %}
 
-
 <body>
     <main id="blog-single">
 
@@ -105,19 +104,19 @@
 
        <!-- SHARE LINKS -->
 
-       <div class="share-links para">
-         <ul>
-          <li class="text-scroll">Share:</li>
-          <li ><a href="#"  class="text-scroll hover ">YT</a></li>
-          <li ><a href="#"  class="text-scroll hover ">FB</a></li>
-          <li ><a href="#"  class="text-scroll hover ">IG</a></li>
-      </ul>
-       </div>
+{#       <div class="share-links para">#}
+{#         <ul>#}
+{#          <li class="text-scroll">Share:</li>#}
+{#          <li ><a href="#"  class="text-scroll hover ">YT</a></li>#}
+{#          <li ><a href="#"  class="text-scroll hover ">FB</a></li>#}
+{#          <li ><a href="#"  class="text-scroll hover ">IG</a></li>#}
+{#      </ul>#}
+{#       </div>#}
 
        <!-- SHARE LINKS -->
 
        <div class="signature">
-        <span class="text-scroll"> Arlo Brown.</span>
+        <span class="text-scroll"> AndreyIva</span>
      </div>
 
 </div>
@@ -130,60 +129,14 @@
   </div>
 
  <!-- HEADPHONE IMG -->
- <div class="headphone img text">
-    <img src="images/headphone.png" title="headphone zone" class="text" alt="headphone">
-  </div>
-   <!-- HEADPHONE IMG -->
-
-
-
-<!-- progress-bar -->
-<div class="progress-bar-container fade-in">
-    <div class="progressbar"></div>
-</div>
+   {% include 'songsapp/includes/inc_headphone_footer.html' %}
 <!-- progress-bar -->
 
              </div>
 
                <!-- NAVIGATION CONTENT -->
 
-    <div class="navigation-content">
-        <div class="navigation-logo hover opacity">
-          <a href="#" class="text">ARLO BROWN</a>
-         </div>
-        <ul class="navigation-ul">
-            <li><a href="index-one.html" data-text="Home" data-img="images/bg-image-three.jpg">Home</a></li>
-            <li><a href="about-one.html"  data-text="About"  data-img="images/about-img.jpg">About</a></li>
-            <li><a href="songs-one.html" data-text="Songs"  data-img="images/album-thumbnail-nine.jpg">Songs</a></li>
-            <li><a href="blog-one.html"  data-text="Blogs" data-img="images/main-bg-three.jpg">Blogs</a></li>
-            <li><a href="contact-one.html"  data-text="Contact" data-img="images/album-thumbnail-four.jpg">Contact</a></li>
-        </ul>
-        <div class="navigation-close hover about-close opacity">
-            <div class="navigation-close-line"></div>
-            <div class="navigation-close-line"></div>
-          </div>
-
-            <div class="project-preview"></div>
-
-
-     <!-- HEADPHONE IMG -->
-     <div class="headphone-navigation opacity">
-        <img src="images/headphone.png" title="headphone zone" class="text" alt="headphone">
-      </div>
-       <!-- HEADPHONE IMG -->
-
-
-        <!-- SOCIAL MEDIA LINKS -->
-        <div class="social-media-links-navigation">
-            <ul>
-                <li ><a href="#"  class="text hover opacity">YT</a></li>
-                <li ><a href="#"  class="text hover opacity">FB</a></li>
-                <li ><a href="#"  class="text hover opacity">IG</a></li>
-            </ul>
-        </div>
-          <!-- SOCIAL MEDIA LINKS -->
-
-    </div>
+     {% include 'songsapp/includes/inc_menu_songs.html' %}
 
     <!-- NAVIGATION CONTENT -->
 
