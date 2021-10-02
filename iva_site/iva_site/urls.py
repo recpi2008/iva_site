@@ -26,7 +26,8 @@ urlpatterns = [
     path('', index, name='index'),
     path('songs/', include('songsapp.urls', namespace='songs')),
     path('users/', include('users.urls', namespace='users')),
-    path('admin-staff/', include('admins.urls', namespace='admins')),
+    path('', include('social_django.urls', namespace='social')),
+    # path('admin-staff/', include('admins.urls', namespace='admins')),
 ]
 
 if settings.DEBUG:
