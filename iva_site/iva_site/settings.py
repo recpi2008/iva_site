@@ -23,7 +23,7 @@ SECRET_KEY = 'django-insecure-j=_gk!5h3266sc@b0t84#+h_r0+f6vrp#kjzq3%un5m8liomyn
 
 from dotenv import load_dotenv
 
-load_dotenv(BASE_DIR / '.env')
+# load_dotenv(BASE_DIR / '.env')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
