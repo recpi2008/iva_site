@@ -27,14 +27,14 @@ paceOptions = {
     document: true,
     eventLag: false
     };
-  
+
     Pace.on('done', function() {
         gsap.to('.p',1,{
           opacity:0,
           y:'-15%',
           stagger:-.1,
         })
-  
+
     gsap.to('#preloader',1.5,{
         y:'-100%',
         ease:'Expo.easeInOut',
@@ -69,7 +69,7 @@ paceOptions = {
 
                 gsap.to('.opacity-contact',1,{delay:1,opacity:1,stagger:.4})
 
-            } 
+            }
 
 
 
@@ -281,6 +281,8 @@ $(".navigation-content ul li a").hover(function(e) {
                 scale:1.5,
                 opacity:.4,
                 background:'rgb(235,235,235)',
+                   // курсор анимации
+                   //  background:'rgb(555,001,001)',
                 border:'none',
                 ease: Expo.easeOut,
                })

@@ -29,8 +29,15 @@
 
  <!-- BLOG IMG -->
  <div class="blog-img img">
+     {% if blog.url_video %}
+<iframe  width="100%" height="515" src="{{ blog.url_video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{#     {{ blog.url_video }}#}
+     {% else %}
+     <img src="{{ blog.image_blog.url }}" alt="blog-img">
+     {% endif %}
+{#     <iframe width="100%" height="515" src="https://www.youtube.com/embed/hMKkjsM5n6s?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>#}
 
-    <img src="{{ blog.in_main_image.url }}" alt="blog-img">
+{#    <img src="{{ blog.in_main_image.url }}" alt="blog-img">#}
 
   </div>
   <!-- BLOG IMG -->

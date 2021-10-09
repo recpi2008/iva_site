@@ -15,8 +15,8 @@ class SongsAdmin(admin.ModelAdmin):
 @admin.register(Blog)
 class BlogAdmin(admin.ModelAdmin):
     list_display = ('blog_name','image_blog', 'blog_desription','blog_duration','blog_type','blog_date',
-                    'in_main_image','in_one_image','in_two_image','in_paragraph_one','in_paragraph_two',
+                    'url_video','in_one_image','in_two_image','in_paragraph_one','in_paragraph_two',
                     'in_paragraph_three','in_paragraph_four','category')
     fields = ('blog_name','image_blog', 'blog_desription','blog_duration','blog_type','blog_date',
-                    'in_main_image','in_one_image','in_two_image','in_paragraph_one','in_paragraph_two',
+                    'url_video','in_one_image','in_two_image','in_paragraph_one','in_paragraph_two',
                     'in_paragraph_three','in_paragraph_four','category')

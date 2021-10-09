@@ -25,12 +25,11 @@ class Songs(models.Model):
 class Blog(models.Model):
     blog_name = models.CharField(verbose_name='Имя блога', max_length=64)
     image_blog = models.ImageField(verbose_name='Фото блога',upload_to='blog_images', blank=True, null=True)
-
     blog_desription = models.CharField(verbose_name='Описание блога', max_length=256)
     blog_duration = models.CharField(verbose_name='Продолжительность',max_length=32, blank=True, null=True)
     blog_type = models.CharField(verbose_name='Тип блога',max_length=32, blank=True, null=True)
     blog_date = models.CharField(verbose_name='Дата блога',max_length=32, blank=True, null=True)
-    in_main_image = models.ImageField(verbose_name='Главное фото внутри',upload_to='blog_images', blank=True, null=True)
+    url_video = models.URLField(verbose_name='Ссылка видео', blank=True, null=True)
     in_one_image = models.ImageField(verbose_name='Первое фото внутри',upload_to='blog_images', blank=True, null=True)
     in_two_image = models.ImageField(verbose_name='Второе фото внутри',upload_to='blog_images', blank=True, null=True)
     in_paragraph_one = models.CharField(verbose_name='Первый заголовок', max_length=256, blank=True, null=True)
