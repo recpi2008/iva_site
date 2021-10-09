@@ -147,19 +147,28 @@ MEDIA_ROOT = BASE_DIR / 'media'
 AUTH_USER_MODEL = 'users.User'
 LOGIN_URL = '/users/login/'
 
-DOMAIN_NAME = 'http://localhost:8000'
-EMAIL_HOST = 'localhost'
-EMAIL_PORT = 25
-EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
-EMAIL_USE_SSL = True if os.getenv('EMAIL_USE_SSL') == 'True' else False
+# DOMAIN_NAME = 'http://localhost:8000'
+# EMAIL_HOST = 'localhost'
+# EMAIL_PORT = 25
+# EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
+# EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
+# EMAIL_USE_SSL = True if os.getenv('EMAIL_USE_SSL') == 'True' else False
 
-EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
-EMAIL_FILE_PATH = 'tmp/emails/'
+DOMAIN_NAME = 'http://localhost:8000'
+EMAIL_HOST = 'smtp.yandex.com'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'recpi5@yandex.ru'
+EMAIL_HOST_PASSWORD = 'Ii786311//'
+EMAIL_USE_SSL = True
+
+
+# EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
+# EMAIL_FILE_PATH = 'tmp/emails/'
 
 # EMAIL_HOST_USER,EMAIL_HOST_PASSWORD = None,None
 
 LOGIN_ERROR_URL = '/'
+LOGIN_REDIRECT_URL = '/'
 
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
@@ -168,9 +177,9 @@ AUTHENTICATION_BACKENDS = (
 
 )
 
-SOCIAL_AUTH_VK_OAUTH2_KEY = os.getenv('SOCIAL_AUTH_VK_OAUTH2_KEY')
-SOCIAL_AUTH_VK_OAUTH2_SECRET = os.getenv('SOCIAL_AUTH_VK_OAUTH2_SECRET')
-SOCIAL_AUTH_VK_OAUTH2_API_VERSION = os.getenv('SOCIAL_AUTH_VK_OAUTH2_API_VERSION')
+SOCIAL_AUTH_VK_OAUTH2_KEY = '7962471'
+SOCIAL_AUTH_VK_OAUTH2_SECRET = 'c6yyZdhEsNiVcP791vTO'
+SOCIAL_AUTH_VK_OAUTH2_API_VERSION = '5.131'
 
 SOCIAL_AUTH_VK_OAUTH2_IGNORE_DEFAULT_SCOPE = True
 SOCIAL_AUTH_VK_OAUTH2_SCOPE = ['email']
