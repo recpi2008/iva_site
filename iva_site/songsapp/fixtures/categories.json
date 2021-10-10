@@ -1,1 +1,1 @@
-[{"model": "songsapp.contentcategory", "pk": 1, "fields": {"name": "Песни", "description": ""}}]
+[{"model": "songsapp.contentcategory", "pk": 1, "fields": {"name": "Блог", "description": ""}}, {"model": "songsapp.contentcategory", "pk": 2, "fields": {"name": "Песни", "description": ""}}]

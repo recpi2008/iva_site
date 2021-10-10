@@ -1,1 +1,62 @@
-[{"model": "songsapp.songs", "pk": 4, "fields": {"image_album": "albums_images/otpuskau.jpg", "song_name": "Отпускаю", "artist_name": "Andrey Iva", "music_file": "music_file/otpuskayu.mp3", "size_music": "5kb", "category": 1}}, {"model": "songsapp.songs", "pk": 5, "fields": {"image_album": "albums_images/krilia.jpg", "song_name": "Крылья", "artist_name": "Andrey Iva", "music_file": "music_file/wings.mp3", "size_music": "5kb", "category": 1}}, {"model": "songsapp.songs", "pk": 6, "fields": {"image_album": "albums_images/skazy.jpg", "song_name": "Скажи", "artist_name": "Andrey Iva", "music_file": "music_file/say.mp3", "size_music": "5kb", "category": 1}}, {"model": "songsapp.songs", "pk": 7, "fields": {"image_album": "albums_images/ulechu.jpg", "song_name": "Я улечу", "artist_name": "Andrey Iva", "music_file": "music_file/say_hM8qnJl.mp3", "size_music": "5kb", "category": 1}}, {"model": "songsapp.songs", "pk": 8, "fields": {"image_album": "albums_images/vabor.jpg", "song_name": "Мы не выбираем", "artist_name": "Andrey Iva", "music_file": "music_file/say_kKfUfdm.mp3", "size_music": "5kb", "category": 1}}]
+[
+  {
+    "model": "songsapp.songs",
+    "pk": 4,
+    "fields": {
+      "image_album": "albums_images/otpuskau.jpg",
+      "song_name": "Отпускаю",
+      "artist_name": "Andrey Iva",
+      "music_file": "music_file/otpuskayu.mp3",
+      "size_music": "5kb",
+      "category": 1
+    }
+  },
+  {
+    "model": "songsapp.songs",
+    "pk": 5,
+    "fields": {
+      "image_album": "albums_images/krilia.jpg",
+      "song_name": "Крылья",
+      "artist_name": "Andrey Iva",
+      "music_file": "music_file/wings.mp3",
+      "size_music": "5kb",
+      "category": 1
+    }
+  },
+  {
+    "model": "songsapp.songs",
+    "pk": 6,
+    "fields": {
+      "image_album": "albums_images/skazy.jpg",
+      "song_name": "Скажи",
+      "artist_name": "Andrey Iva",
+      "music_file": "music_file/say.mp3",
+      "size_music": "5kb",
+      "category": 1
+    }
+  },
+  {
+    "model": "songsapp.songs",
+    "pk": 7,
+    "fields": {
+      "image_album": "albums_images/ulechu.jpg",
+      "song_name": "Я улечу",
+      "artist_name": "Andrey Iva",
+      "music_file": "music_file/say_hM8qnJl.mp3",
+      "size_music": "5kb",
+      "category": 1
+    }
+  },
+  {
+    "model": "songsapp.songs",
+    "pk": 8,
+    "fields": {
+      "image_album": "albums_images/vabor.jpg",
+      "song_name": "Мы не выбираем",
+      "artist_name": "Andrey Iva",
+      "music_file": "music_file/say_kKfUfdm.mp3",
+      "size_music": "5kb",
+      "category": 1
+    }
+  }
+]
