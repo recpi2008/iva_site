@@ -155,7 +155,7 @@ LOGIN_URL = '/users/login/'
 # EMAIL_USE_SSL = True if os.getenv('EMAIL_USE_SSL') == 'True' else False
 
 # DOMAIN_NAME = 'http://localhost:8000'
-DOMAIN_NAME = 'http://89.108.77.161/'
+DOMAIN_NAME = 'http://89.108.77.161'
 EMAIL_HOST = 'smtp.yandex.com'
 EMAIL_PORT = 465
 EMAIL_HOST_USER = 'recpi5@yandex.ru'
