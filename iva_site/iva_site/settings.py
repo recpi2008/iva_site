@@ -155,7 +155,7 @@ LOGIN_URL = '/users/login/'
 # EMAIL_USE_SSL = True if os.getenv('EMAIL_USE_SSL') == 'True' else False
 
 # DOMAIN_NAME = 'http://localhost:8000'
-DOMAIN_NAME = 'https://andreyiva.ru'
+DOMAIN_NAME = 'http://andreyiva.ru'
 EMAIL_HOST = 'smtp.yandex.com'
 EMAIL_PORT = 465
 EMAIL_HOST_USER = 'recpi5@yandex.ru'
@@ -178,8 +178,8 @@ AUTHENTICATION_BACKENDS = (
 
 )
 
-SOCIAL_AUTH_VK_OAUTH2_KEY = '7962471'
-SOCIAL_AUTH_VK_OAUTH2_SECRET = 'c6yyZdhEsNiVcP791vTO'
+SOCIAL_AUTH_VK_OAUTH2_KEY = '7976144'
+SOCIAL_AUTH_VK_OAUTH2_SECRET = 'ET9mqsbZ7kMujBiCld9g'
 SOCIAL_AUTH_VK_OAUTH2_API_VERSION = '5.131'
 
 SOCIAL_AUTH_VK_OAUTH2_IGNORE_DEFAULT_SCOPE = True
@@ -200,3 +200,5 @@ SOCIAL_AUTH_PIPELINE = (
     'social_core.pipeline.social_auth.load_extra_data',
     'social_core.pipeline.user.user_details',
 )
+
+STATIC_ROOT = '/home/c/cq45999/iva_site/public_html/static'
