@@ -15,7 +15,7 @@
 #
 # application = get_wsgi_application()
 
-# -*- coding: utf-8 -*-
+-*- coding: utf-8 -*-
 import os
 import sys
 import platform
