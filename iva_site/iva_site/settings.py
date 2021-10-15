@@ -201,4 +201,4 @@ SOCIAL_AUTH_PIPELINE = (
     'social_core.pipeline.user.user_details',
 )
 
-STATIC_ROOT = '/home/c/cq45999/iva_site/public_html/static'
+# STATIC_ROOT = '/home/c/cq45999/iva_site/public_html/static'
