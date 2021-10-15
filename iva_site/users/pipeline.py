@@ -44,13 +44,13 @@ def save_user_profile(backend, user, response, *args, **kwargs):
             raise AuthForbidden('social_core.backends.vk.VKOAuth2')
 
 
-    if data['photo_100']:
-        photo_link = data['photo_100']
-        photo_response = requests.get(photo_link)
-        path_photo = f'users_images/{user.pk}.jpg'
-        with open(f'media/{path_photo}','wb') as photo:
-            photo.write(photo_response.content)
-        user.image = path_photo
+    # if data['photo_100']:
+    #     photo_link = data['photo_100']
+    #     photo_response = requests.get(photo_link)
+    #     path_photo = f'users_images/{user.pk}.jpg'
+    #     with open(f'media/{path_photo}','wb') as photo:
+    #         photo.write(photo_response.content)
+    #     user.image = path_photo
 
     if data['personal']:
         user.userprofile.langs= ' '.join(data['personal']['langs'])
