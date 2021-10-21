@@ -156,7 +156,7 @@ LOGIN_URL = '/users/login/'
 # EMAIL_USE_SSL = True if os.getenv('EMAIL_USE_SSL') == 'True' else False
 
 # DOMAIN_NAME = 'http://localhost:8000'
-DOMAIN_NAME = 'http://andreyiva.ru'
+DOMAIN_NAME = 'https://andreyiva.ru'
 EMAIL_HOST = 'smtp.yandex.com'
 EMAIL_PORT = 465
 EMAIL_HOST_USER = 'recpi5@yandex.ru'
@@ -202,4 +202,4 @@ SOCIAL_AUTH_PIPELINE = (
     'social_core.pipeline.user.user_details',
 )
 
-STATIC_ROOT = '/home/c/cq45999/iva_site/public_html/static'
+# STATIC_ROOT = '/home/c/cq45999/iva_site/public_html/static'

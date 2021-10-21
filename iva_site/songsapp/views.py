@@ -51,3 +51,10 @@ class ProductDetail(DetailView):
         context['categories'] = ContentCategory.objects.all()
         context['title'] = 'AndreyIva - О БЛОГЕ'
         return context
+
+
+def portfolio(request):
+    contex = {
+        'title': 'AndreyIva - ТРЕКИ',
+    }
+    return render(request, 'songsapp/portfolio.html', contex)
