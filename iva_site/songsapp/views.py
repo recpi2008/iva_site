@@ -53,8 +53,3 @@ class ProductDetail(DetailView):
         return context
 
 
-def portfolio(request):
-    contex = {
-        'title': 'AndreyIva - ТРЕКИ',
-    }
-    return render(request, 'songsapp/portfolio.html', contex)
