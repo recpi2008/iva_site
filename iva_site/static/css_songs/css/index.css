@@ -222,8 +222,8 @@ a{
     opacity: .8;
 }
 .text.reveal:before ,.text-scroll.reveal:before{
-    background: rgb(240,240,240);              /* цвет полосок текста скрол */
-    animation: blockRevealAnimation 1.2s ease forwards;
+    /*background: rgb(240,240,240);              !* цвет полосок текста скрол *!*/
+    animation: blockRevealAnimation 0.2s ease forwards;
 }
 .img ,.img-scroll{
     position: relative;
@@ -249,7 +249,7 @@ a{
 }
 
 .img.reveal:before ,.img-scroll.reveal:before{
-    background: rgb(240,240,240);                    /*цвет полосок фото*/
+    /*background: rgb(240,240,240);                    !*цвет полосок фото*!*/
 
     animation: blockRevealAnimation 1.2s ease forwards;
 }
@@ -1672,10 +1672,10 @@ ABOUT-ONE
     font-size: 15px;
     display: none;
 }
-.menu-bar-line{
-    width: 30px;
-    height: 3px;
-}
+/*.menu-bar-line{*/
+/*    width: 30px;*/
+/*    height: 3px;*/
+/*}*/
 
 .about-one-heading{
     font-size: 35px;
