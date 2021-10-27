@@ -4,25 +4,25 @@
   * Author/Developer: Sujal
   * Version: v1
   */
-@import url('https://fonts.googleapis.com/css?family=Raleway:300&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Poppins:500&display=swap');
+/*@import url('https://fonts.googleapis.com/css?family=Raleway:300&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css?family=Poppins:500&display=swap');*/
 *{
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
 }
-::-webkit-scrollbar{
-    width: 4px;
-    color:#c70039;
-    transition: all .4s ease;
-}
-::-webkit-scrollbar-thumb {
-    background: #c70039; 
-    border-radius: 4px;
-    width: 4px;
-    transition: all .4s ease;
-  }
+/*::-webkit-scrollbar{*/
+/*    width: 4px;*/
+/*    color:#c70039;*/
+/*    transition: all .4s ease;*/
+/*}*/
+/*::-webkit-scrollbar-thumb {*/
+/*    background: #c70039; */
+/*    border-radius: 4px;*/
+/*    width: 4px;*/
+/*    transition: all .4s ease;*/
+/*  }*/
   ::-webkit-scrollbar-track {
     background: #101010; 
     border-radius: 4px;
@@ -369,18 +369,18 @@ body{
     letter-spacing: 10px;
 }
 
-#breaker{
-    height: 100vh;
-    width: 200%;
-    background-color: #c70039;
-    opacity: 1;
-    animation: breakeranimate 2s linear;
-    display: none;
-    transition: all .4s ease;
-    border-radius: 5px;
-    z-index: 10;
-    position: fixed;
-}
+/*#breaker{*/
+/*    height: 100vh;*/
+/*    width: 200%;*/
+/*    background-color: #c70039;*/
+/*    opacity: 1;*/
+/*    animation: breakeranimate 2s linear;*/
+/*    display: none;*/
+/*    transition: all .4s ease;*/
+/*    border-radius: 5px;*/
+/*    z-index: 10;*/
+/*    position: fixed;*/
+/*}*/
 @keyframes breakeranimate{
    0%{ transform : translateX(-100%)}
    50%{ transform : translateX(0%) }

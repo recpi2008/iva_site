@@ -17,7 +17,7 @@
 
   <!-- HEADING -->
   <div class="heading">
-      <div class="text">
+      <div class="texts">
         {{ blog.blog_name }}
       </div>
   </div>
@@ -52,8 +52,8 @@
     <!-- BLOG INFO -->
 
     <div class="blog-info">
-      <div class="blog-date text-scroll">{{ blog.blog_date }}</div>
-      <div class="blog-duration img-scroll text-scroll"><img src="{% static 'css_songs/images/clock.png' %}" alt="clock">&nbsp; 4 Min </div>
+      <div class="blog-date">{{ blog.blog_date }}</div>
+      <div class="blog-duration"><img src="{% static 'css_songs/images/clock.png' %}" alt="clock">&nbsp; 4 Min </div>
     </div>
 
     <!-- BLOG INFO -->
@@ -68,14 +68,14 @@
 
 
     <!-- PARAGRAPH -->
-    <div class="para text-scroll">
+    <div class="para">
       {{ blog.in_paragraph_one }}
       </div>
     <!-- PARAGRAPH -->
 
 
     <!-- PARAGRAPH -->
-    <div class="para text-scroll">
+    <div class="para">
        {{ blog.in_paragraph_two }}
         </div>
       <!-- PARAGRAPH -->
@@ -84,11 +84,11 @@
           <!-- IMAGES -->
     <div class="blog-text-img">
 
-        <div class="img-scroll">
+        <div class="">
             <img src="{{ blog.in_one_image.url }}" alt="img" >
         </div>
 
-        <div class="img-scroll">
+        <div class="">
             <img src="{{ blog.in_two_image.url }}" alt="img" >
         </div>
     </div>
@@ -97,14 +97,14 @@
 
 
       <!-- PARAGRAPH ITALIC-->
-    <div class="para text-scroll italic ">
+    <div class="para italic ">
      <i>{{ blog.iin_paragraph_three }}</i>
         </div>
       <!-- PARAGRAPH ITALIC -->
 
 
         <!-- PARAGRAPH -->
-    <div class="para text-scroll">
+    <div class="para">
         {{ blog.in_paragraph_four }}
          </div>
        <!-- PARAGRAPH -->
@@ -123,7 +123,7 @@
        <!-- SHARE LINKS -->
 
        <div class="signature">
-        <span class="text-scroll"> AndreyIva</span>
+        <span class=""> AndreyIva</span>
      </div>
 
 </div>
