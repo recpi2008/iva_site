@@ -22,6 +22,12 @@ def about(request):
     }
     return render(request, 'songsapp/about.html', contex)
 
+def fotogalery(request):
+    contex = {
+        'title': 'AndreyIva - ОБО МНЕ',
+    }
+    return render(request, 'songsapp/fotogalery.html', contex)
+
 def blog(request):
     contex = {
         'title': 'AndreyIva - БЛОГ',

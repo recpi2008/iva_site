@@ -1,6 +1,7 @@
 {% block menu %}
     {% load static %}
 
+
     <!-- NAVIGATION CONTENT -->
 
     <div class="navigation-content">
@@ -13,6 +14,10 @@
 
             <li><a href="{% url 'songs:about' %}" data-text="ОБОМНЕ"
                    data-img="{% static 'css_songs/images/m_2.jpg' %}">ОБО МНЕ</a></li>
+
+        <li><a href="{% url 'songs:fotogalery' %}" data-text="ГАЛЕРЕЯ"
+                   data-img="{% static 'css_songs/images/m_2.jpg' %}">ГАЛЕРЕЯ</a></li>
+
             <li><a href="{% url 'songs:blog' %}" data-text="БЛОГ"
                    data-img="{% static 'css_songs/images/m_3.jpg' %}">БЛОГ</a>
             </li>
