@@ -1,0 +1,127 @@
+{% extends 'songsapp/basa_songs.html' %}
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css_new/style.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <body>
+    <!-- MAIN CONTENT -->
+    <main id="about-one">
+         {% include 'songsapp/includes/inc_headphone.html' %}
+        <div id="about-one-content">
+           {% include 'songsapp/includes/inc_logo_songs.html' %}
+
+<!-- progress-bar -->
+<div class="progress-bar-container fade-in">
+    <div class="progressbar"></div>
+</div>
+<!-- progress-bar -->
+
+ {% include 'songsapp/includes/inc_baraban.html' %}
+
+            <!-- HEADPHONE IMG -->
+ <div class="headphone img text">
+  <img src="{% static 'css_songs/images/headphone.png' %}" title="headphone zone" class="text" alt="headphone">
+</div>
+ <!-- HEADPHONE IMG -->
+
+        </div>
+    </div>
+{# {% include 'songsapp/includes/inc_menu_songs.html' %}#}
+        <div class="navigation-content">
+        <div class="navigation-logo hover opacity">
+            <a href="{% url 'index' %}" class="texts">AndreyIva</a>
+        </div>
+        <ul class="navigation-ul" >
+            <li style="padding:0px"><a style="padding:0px" href="{% url 'index' %}"
+                   data-img="{% static 'css_songs/images/m_1.jpg' %}">ГЛАВНАЯ</a></li>
+
+            <li style="padding:0px"><a style="padding:0px" href="{% url 'songs:about' %}"
+                   data-img="{% static 'css_songs/images/m_2.jpg' %}">ОБО МНЕ</a></li>
+
+        <li style="padding:0px"><a style="padding:0px" href="{% url 'songs:fotogalery' %}"
+                   data-img="{% static 'css_songs/images/m_2.jpg' %}">ГАЛЕРЕЯ</a></li>
+
+            <li style="padding:0px"><a style="padding:0px" href="{% url 'songs:blog' %}"
+                   data-img="{% static 'css_songs/images/m_3.jpg' %}">БЛОГ</a>
+            </li>
+            <li style="padding:0px"><a style="padding:0px" href="{% url 'songs:song' %}"
+                   data-img="{% static 'css_songs/images/m_4.jpg' %}">ТРЕКИ</a></li>
+
+            <li style="padding:0px"><a style="padding:0px" href="{% url 'songs:contact' %}"
+                   data-img="{% static 'css_songs/images/contact_m.jpg' %}">КОНТАКТЫ</a></li>
+
+
+            {% if user.is_authenticated %}
+                <li style="padding:0px"><a style="padding:0px" href="{% url 'users:profile' %}"
+                   data-img="{% static 'css_songs/images/m_5.jpg' %}">АККАУНТ</a></li>
+                <li style="padding:0px"><a style="padding:0px" href="{% url 'users:logout' %}"
+                   data-img="{% static 'css_songs/images/m_6.jpg' %}">ВЫЙТИ</a></li>
+                {% if user.is_staff %}
+                    <li><a href="/admin/"
+                   data-img="{% static 'css_songs/images/m_7.jpg' %}">АДМИНКА</a></li>
+                    {% endif %}
+            {% else %}
+                 <li style="padding:0px"><a style="padding:0px" href="{% url 'users:login' %}"
+                   data-img="{% static 'css_songs/images/m_3.jpg' %}">ВОЙТИ</a></li>
+                 <li style="padding:0px"><a style="padding:0px" href="{% url 'users:registration' %}"
+                   data-img="{% static 'css_songs/images/m_5.jpg' %}">РЕГИСТРАЦИЯ</a></li>
+
+            {% endif %}
+
+        </ul>
+        <div class="navigation-close hover about-close opacity">
+            <div class="navigation-close-line"></div>
+            <div class="navigation-close-line"></div>
+        </div>
+
+        <div class="project-preview"></div>
+
+
+        <!-- HEADPHONE IMG -->
+        <div class="headphone-navigation opacity">
+            <img src="{% static 'css_songs/images/headphone.png' %}" title="headphone zone" class="text"
+                 alt="headphone">
+        </div>
+        <!-- HEADPHONE IMG -->
+
+
+        <!-- SOCIAL MEDIA LINKS -->
+        <div class="social-media-links-navigation">
+            <ul>
+                <li><a href="https://www.instagram.com/a.iva88/" target="_blank"><img src="{% static 'images/instagram logo.png' %}" class="social-media"
+                                     alt="instagram-logo"/></a></li>
+                <li><a href="https://www.facebook.com/al.iva.503" target="_blank"><img src="{% static 'images/facebook logo.png' %}" class="social-media"
+                                     alt="facebook-logo"/></a></li>
+                <li><a href="#"
+                ><img
+                        src="{% static 'images/linkedin logo.png' %}"
+                        class="social-media"
+                        alt="linkedin-logo"
+                /></a></li>
+                <li><a href="#"
+                ><img
+                        src="{% static 'images/twitter logo.png' %}"
+                        class="social-media"
+                        alt="twitter-logo"
+                /></a></li>
+
+            </ul>
+        </div>
+        <!-- SOCIAL MEDIA LINKS -->
+
+    </div>
+{# {% include 'songsapp/includes/inc_menu_songs.html' %}#}
+
+    </main>
+    <!-- MAIN CONTENT -->
+    </body>
+{% endblock %}
+{% block js %}
+    <script src="{% static 'js/core.min.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+
+
+{% endblock %}
